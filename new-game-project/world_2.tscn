@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://c1t00wxyq57pb"]
+
+[ext_resource type="PackedScene" uid="uid://ctb8n71p3vtsn" path="res://bob.tscn" id="1_u5ktm"]
+[ext_resource type="Texture2D" uid="uid://yeetpj61wk71" path="res://assets/PNG/Battleground4/Bright/back_trees.png" id="2_ia432"]
+[ext_resource type="Texture2D" uid="uid://dnhq2spngpvxg" path="res://assets/PNG/Battleground4/Bright/bones.png" id="3_hlada"]
+[ext_resource type="PackedScene" uid="uid://bbg5lt74jaek5" path="res://hammer_pickup.tscn" id="4_fu0tf"]
+[ext_resource type="PackedScene" uid="uid://2oqfqxx5b61g" path="res://enemy.tscn" id="5_mv2s0"]
+[ext_resource type="PackedScene" uid="uid://uflbvfgfxr5s" path="res://door_2.tscn" id="6_mv2s0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cs4na"]
+size = Vector2(5994.5, 436)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jknfv"]
+size = Vector2(5364.5, 441)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b8x4h"]
+size = Vector2(1081, 1814.5)
+
+[node name="World2" type="Node2D" unique_id=1105207896]
+
+[node name="Bob" parent="." unique_id=208910164 instance=ExtResource("1_u5ktm")]
+z_index = 1
+position = Vector2(953.99994, 129)
+
+[node name="BackTrees" type="Sprite2D" parent="." unique_id=1869800383]
+position = Vector2(959, 109)
+texture = ExtResource("2_ia432")
+
+[node name="BackTrees2" type="Sprite2D" parent="." unique_id=744831287]
+z_index = -1
+position = Vector2(962, 542)
+texture = ExtResource("2_ia432")
+
+[node name="BackTrees3" type="Sprite2D" parent="." unique_id=290067966]
+z_index = -1
+position = Vector2(3116.25, 165.00002)
+scale = Vector2(1.9278647, 1.7157408)
+texture = ExtResource("2_ia432")
+
+[node name="Bones" type="Sprite2D" parent="." unique_id=238411945]
+position = Vector2(900, 483)
+texture = ExtResource("3_hlada")
+
+[node name="Bones2" type="Sprite2D" parent="." unique_id=1956837256]
+position = Vector2(2145, 525)
+texture = ExtResource("3_hlada")
+
+[node name="HammerPickup" parent="." unique_id=334102389 instance=ExtResource("4_fu0tf")]
+position = Vector2(2444, 376)
+
+[node name="Enemy" parent="." unique_id=869605531 instance=ExtResource("5_mv2s0")]
+position = Vector2(2965.9998, 347)
+
+[node name="Enemy2" parent="." unique_id=331045157 instance=ExtResource("5_mv2s0")]
+position = Vector2(1922, 372.00003)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=676070734]
+position = Vector2(-122, 989)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=410510406]
+position = Vector2(3075.75, 245)
+shape = SubResource("RectangleShape2D_cs4na")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=741931765]
+position = Vector2(126, -74)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1891630550]
+position = Vector2(2538.75, -112)
+shape = SubResource("RectangleShape2D_jknfv")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=1522533942]
+position = Vector2(4610, 489)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1154051972]
+position = Vector2(870, -285)
+shape = SubResource("RectangleShape2D_b8x4h")
+
+[node name="Door2" parent="." unique_id=1025704901 instance=ExtResource("6_mv2s0")]
+position = Vector2(3967, 488)

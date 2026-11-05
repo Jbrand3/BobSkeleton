@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dk5casaxf07xa"]
+
+[ext_resource type="Texture2D" uid="uid://xblmo0cnhfqb" path="res://assets/Golem_3/PNG/Vector Parts/Sword.png" id="1_61tva"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cs4na"]
+radius = 26.000004
+height = 224.0
+
+[node name="WeaponPickup" type="Area2D" unique_id=360940387]
+position = Vector2(-6, -9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=746747307]
+z_index = 1
+position = Vector2(1, 1)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_cs4na")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1166303053]
+position = Vector2(3.8146973e-06, 2.000002)
+scale = Vector2(0.5625, 0.65625)
+texture = ExtResource("1_61tva")

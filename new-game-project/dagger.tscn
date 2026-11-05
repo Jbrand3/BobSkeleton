@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bjmvu5um7csw1"]
+
+[ext_resource type="Script" uid="uid://c2bd7ruaom5lq" path="res://dagger.gd" id="1_ixfv2"]
+[ext_resource type="Texture2D" uid="uid://xblmo0cnhfqb" path="res://assets/Golem_3/PNG/Vector Parts/Sword.png" id="2_gr5qi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cs4na"]
+radius = 8.0
+height = 110.0
+
+[node name="Dagger" type="Area2D" unique_id=2069447475]
+script = ExtResource("1_ixfv2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=517881807]
+position = Vector2(45.750015, 8)
+scale = Vector2(0.23624994, 0.140625)
+texture = ExtResource("2_gr5qi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2130783806]
+position = Vector2(57, 7)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_cs4na")

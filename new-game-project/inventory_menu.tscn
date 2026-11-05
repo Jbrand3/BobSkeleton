@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cmhb80fyvot8w"]
+
+[node name="InventoryMenu" type="Control" unique_id=297661426]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=745530267]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 300.0
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer" unique_id=774296818]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Inventory"
+
+[node name="ItemListLabel" type="Label" parent="VBoxContainer" unique_id=822989344]
+layout_mode = 2
+text = "Empty"
+
+[node name="BackButton" type="Button" parent="VBoxContainer" unique_id=2002727303]
+layout_mode = 2
+text = "Back to Pause Menu "
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1146574825]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(420.6, 38.56)
+color = Color(0.09411765, 0.09411765, 0.09411765, 0.14509805)

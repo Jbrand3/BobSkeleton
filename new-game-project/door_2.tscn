@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://uflbvfgfxr5s"]
+
+[ext_resource type="Script" uid="uid://cgga2f43f1l7o" path="res://door_2.gd" id="1_euxko"]
+[ext_resource type="Texture2D" uid="uid://jimi1aamrgfx" path="res://assets/PNG/Battleground4/Bright/crypt.png" id="1_h07va"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cs4na"]
+size = Vector2(539, 535)
+
+[node name="Door2" type="Area2D" unique_id=1025704901]
+script = ExtResource("1_euxko")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=718420644]
+position = Vector2(764, 15)
+scale = Vector2(1.2765625, 1.0925925)
+texture = ExtResource("1_h07va")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=145526277]
+position = Vector2(259.5, -277.5)
+shape = SubResource("RectangleShape2D_cs4na")

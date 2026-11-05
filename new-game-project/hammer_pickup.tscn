@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bbg5lt74jaek5"]
+
+[ext_resource type="Script" uid="uid://bvpccjh6xo711" path="res://hammer_pickup.gd" id="1_e3t3a"]
+[ext_resource type="Texture2D" uid="uid://iexcy01womx3" path="res://assets/Golem_2/PNG/Vector Parts/Sword.png" id="2_7yy30"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cs4na"]
+radius = 68.0
+height = 318.0
+
+[node name="HammerPickup" type="Area2D" unique_id=334102389]
+script = ExtResource("1_e3t3a")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=873350952]
+texture = ExtResource("2_7yy30")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=754451611]
+position = Vector2(31, -5)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_cs4na")
